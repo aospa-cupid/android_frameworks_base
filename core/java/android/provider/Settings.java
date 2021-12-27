@@ -6071,6 +6071,20 @@ public final class Settings {
         public static final String LESS_BORING_HEADS_UP = "less_boring_heads_up";
 
         /**
+         * GameSpace: List of added games by user
+         *
+         * @hide
+         */
+        public static final String GAMESPACE_GAME_LIST = "gamespace_game_list";
+
+        /**
+         * GameSpace: Whether fullscreen intent will be suppressed while in game session
+         *
+         * @hide
+         */
+        public static final String GAMESPACE_SUPPRESS_FULLSCREEN_INTENT = "gamespace_suppress_fullscreen_intent";
+
+        /**
          * Keys we no longer back up under the current schema, but want to continue to
          * process when restoring historical backup datasets.
          *
@@ -12173,6 +12187,16 @@ public final class Settings {
          * @hide
          */
         public static final String QQS_NUM_COLUMNS_LANDSCAPE = "qqs_num_columns_landscape";
+
+        /**
+         * Our GameSpace can't write to device_config directly [GTS]
+         * Use this as intermediate to pass device_config property
+         * from our GameSpace to com.android.server.app.GameManagerService
+         * so we can set the device_config property from there.
+         *
+         * @hide
+         */
+        public static final String GAME_OVERLAY = "game_overlay";
 
         /**
          * These entries are considered common between the personal and the managed profile,
