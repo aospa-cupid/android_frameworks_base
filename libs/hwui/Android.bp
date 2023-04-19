@@ -161,6 +161,7 @@ cc_defaults {
     cflags: [
         "-O3",
         "-fno-omit-frame-pointer",
+        "-O3",
     ],
 }
 
