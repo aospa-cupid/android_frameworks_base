@@ -160,8 +160,6 @@ cc_defaults {
     // TODO: Non-arm?
     cflags: [
         "-O3",
-        "-fno-omit-frame-pointer",
-        "-O3",
     ],
 }
 
