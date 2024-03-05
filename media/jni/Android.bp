@@ -121,10 +121,8 @@ cc_library_shared {
         "-Wunreachable-code",
     ],
 
-    // Workaround Clang LTO crash.
-    lto: {
-        never: true,
-    },
+    // TODO(b/330503129) Workaround build breakage.
+    lto_O0: true,
 }
 
 cc_library_shared {
