@@ -291,6 +291,7 @@ constructor(
 
             override fun onUiModeChanged() {
                 updateResources()
+	    }
 
             override fun onThemeChanged() {
                 clock.setTextAppearance(R.style.TextAppearance_QS_Status)
